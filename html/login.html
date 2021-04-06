@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="../themes3/mytheme3.css" />
+<link rel="stylesheet" href="../themes3/jquery.mobile.icons.min.css" />
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+  <div id="page" data-role="page" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Register</h1>
+    </div>  
+    <div data-role="main" class="ui-content">
+      <h2>Login</h2>
+      <p align="right">
+        <a href="registration.html" id="showregistration">Don't have an account? &rarr;</a>        
+      </p>
+      <p align="right"><a href="registration.html" id="showregistration">Forgot password? &rarr;</a></p>
+      <form method="post" id="loginForm" action="#">
+        <label for="email">Email :</label>
+		<input type="email" name="email" id="email" placeholder="username@domain.com">
+		<label for="password">Password :</label>
+		<input type="password" name="password" id="password" placeholder="password">		
+        <input type="button"
+          value="Login" id="submitButton" >
+      </form>
+    </div>
+    <div data-role = "footer" data-theme="a" data-position="fixed">
+        <h4>Copyright &copy;2020</h4>
+    </div>
+  </div>
+</body>
+</html>

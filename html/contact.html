@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="../themes/mytheme.css" />
+<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		
+		<div data-role="header" >
+			<h1>Contact for Coaching</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content" >
+			<form method="post" action="#" data-ajax="false">
+				<label for="name">Name : <span>*</span></label>
+				<input type="text" name="name" id="name" placeholder="Name">
+				<label for="email">Email: <span>*</span></label>
+				<input type="email" id="email" name="email" placeholder="Email"/>
+				<fieldset data-role="controlgroup">
+					<legend>Gender:</legend>
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="female">Female</label>
+					<input type="radio" name="gender" id="female" value="female">
+				</fieldset>
+				<fieldset data-role="controlgroup">
+					<legend>Contacting for:</legend>
+					<label for="course">Course: JEE MAIN</label>
+					<input type="checkbox" id="course" value="course">
+					<label for="jee">Course: JEE ADVANCED</label>
+					<input type="checkbox" id="jee" value="jee">
+					<label for="other">Course: XI / XII </label>
+					<input type="checkbox" id="other" value="other">
+				</fieldset>
+				<label for = "select">Select City</label>
+				<select name = "select" id = "select">
+					<option value = "1">Belgaum</option>
+					<option value = "2">Pune</option>
+					<option value = "3">Chennai</option>
+					<option value = "4">Bangalore</option>
+					<option value = "5">Mumbai</option>
+				</select>
+				<label for="slider2">Need Urgent Response:</label>
+				<select name="slider2" id="slider2" data-role="slider">
+    				<option value="off">No</option>
+    				<option value="on">Yes</option>
+				</select>		
+				<label for="info">Message:</label>
+				<textarea name="addinfo" id="info" placeholder="Message"></textarea>
+				<input type="submit" data-inline="true" value="Submit" >
+				<input type="reset" data-inline="true" value="Reset" >
+			</form>
+		</div>
+		
+		<div data-role = "footer"  data-position="fixed">
+			<h4>Copyright &copy;2020</h4>
+		</div>
+	</div>
+</body>
+</html>

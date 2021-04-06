@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex, nofollow">
+<title>Tittle</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="../themes2/mytheme2.css" />
+<link rel="stylesheet" href="../themes2/jquery.mobile.icons.min.css" />
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-theme="a">
+			<h1>Register</h1>
+		</div>
+		<div data-role="main" class="ui-content" data-theme="a">
+			<form class="form" method="post" action="#">
+				<label>Full Name :</label>
+				<input type="text" name="dname" id="name">
+				<label>Email :</label>
+				<input type="text" name="demail" id="email">
+				<label>Password :</label>
+				<input type="password" name="password" id="password">
+				<label>Confirm Password :</label>
+				<input type="password" name="cpassword" id="cpassword">
+				<label for="bday">Date of Birth:</label>
+				<input type="date" name="bday" id="bday">
+				<label for="tel">Tel:</label>
+				<input type="tel" name="tel" id="tel" value="">
+				<input type="submit" data-inline="true" value="Submit" data-theme="a">
+                <input type="reset" data-inline="true" value="Reset" data-theme="b">
+			</form>
+		</div>
+        <div data-role = "footer" data-theme="a" data-position="fixed">
+			<h4>Copyright &copy;2020</h4>
+		</div>
+	</div>
+</body>
+</html>
